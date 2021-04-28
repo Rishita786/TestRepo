@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div style="text-align:center">
+  <h1 >Welcome <span>[[${usern}]]</span></h1><br><br>
+<div class="myDiv">
+<form action="test">
+  <br><br>
+Enter your name: <input type="text" name="bname"><br><br>
+Enter your Phone number:<input type="text" name="bnumber"><br><br>
+Enter your email:<input type="text" name="bemail"><br><br>
+<input type="hidden"  name="pid" th:value="${id}">
+<input type="hidden" name="bprice" th:value="${price}">
+<input type="hidden" name="uname" th:value="${usern}">
+<input type="hidden" name="usern" th:value="${usern}">
+<input type="reset"> 
+<input type="submit" value="Confirm">
+<br><br><br>
+</form>
+</div>
+<form action="/">
+  <br><br>
+<input type="submit" value="Go to home page">
+
+</form>
+</div>
+</body>
+</html>

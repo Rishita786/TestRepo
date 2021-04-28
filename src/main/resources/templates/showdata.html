@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div th:text="${name}"></div>
+<br>
+<div th:text="${ans}"></div>
+
+<form action="bookingdetails">
+<br>
+<input type="hidden" name="uname" th:value="${name}">
+to watch booking details
+<input type="submit" name="all bookings">
+<br>
+</form>
+<form action="/">
+<input type="submit" value="Homepage">
+</form>
+cancel a booking
+<form action="cancelbooking">
+<input type="text" name="bid">
+<input type="button" name="Cancel">
+</form>
+
+</body>
+</html>
